@@ -10,10 +10,10 @@ button.addEventListener('click', (event) => {
       'Content-Type': 'application/json'
     },
     body: JSON.parse({
-      "creatorname": document.querySelectorAll("input")[0].value,
-      "creatorpass": document.querySelectorAll("input")[1].value,
-      "newusername": document.querySelectorAll("input")[2].value,
-      "newuserpass": document.querySelectorAll("input")[3].value,
+      creatorname: document.querySelectorAll("input")[0].value,
+      creatorpass: document.querySelectorAll("input")[1].value,
+      newusername: document.querySelectorAll("input")[2].value,
+      newuserpass: document.querySelectorAll("input")[3].value,
     }),
   })
 })
