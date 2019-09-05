@@ -4,7 +4,7 @@ const button = document.querySelector("button");
 button.addEventListener('click', (event) => {
   event.preventDefault();
   console.log(document.querySelectorAll('input'));
-  fetch(`http://localhost:8081/createuser`, {
+  fetch(`http://localhost:3001/createuser`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
