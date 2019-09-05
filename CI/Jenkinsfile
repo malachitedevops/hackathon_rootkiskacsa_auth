@@ -1,7 +1,7 @@
 pipeline {
 	
 	environment {
-		registry = "samuzad/ersteUserCreator"
+		registry = "samuzad/ersteusercreator"
 		registryCredential = 'samudocker'
 		dockerImage = ''
 	}
