@@ -7,12 +7,6 @@ const PORT = 3001;
 app.use(express.static('view'));
 app.use(express.json());
 
-app.use(function(req, res, next) {
-	res.header("Access-Control-Allow-Origin", "*"); 
-	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-	next();
-  });
-
 require('dotenv').config();
 const mysql = require('mysql');
 const sha512 = require('js-sha512');

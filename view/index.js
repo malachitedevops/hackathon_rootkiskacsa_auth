@@ -4,7 +4,7 @@ const button = document.querySelector("button");
 button.addEventListener('click', (event) => {
   event.preventDefault();
   console.log(document.querySelectorAll('input'));
-  fetch(`http://terraform-20190905185139149400000001.cc4trv09ziot.us-east-1.rds.amazonaws.com:3306/createuser`, {
+  fetch(`http://54.81.110.184:3001/createuser`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
