@@ -3,8 +3,9 @@
 const button = document.querySelector("button");
 button.addEventListener('click', (event) => {
   event.preventDefault();
-  fetch(`http://ec2-54-81-110-184.compute-1.amazonaws.com:3001/createuser`, {
+  fetch(`http://54.81.110.184:3001/createuser`, {
     method: 'POST',
+    mode: "no-cors",
     headers: {
       'Content-Type': 'application/json'
     },
