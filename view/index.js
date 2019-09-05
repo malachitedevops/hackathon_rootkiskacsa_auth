@@ -3,7 +3,6 @@
 const button = document.querySelector("button");
 button.addEventListener('click', (event) => {
   event.preventDefault();
-  console.log(querySelectorAll("input")[0].value)
   fetch(`http://localhost:3001/createuser`, {
     method: 'POST',
     mode: "same-origin",
