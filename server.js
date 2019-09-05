@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const PORT = 3001;
 
-app.use(express.static('public'));
+app.use(express.static('view'));
 app.use(express.json());
 
 require('dotenv').config();
