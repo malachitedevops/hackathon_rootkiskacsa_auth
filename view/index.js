@@ -3,9 +3,9 @@
 const button = document.querySelector("button");
 button.addEventListener('click', (event) => {
   event.preventDefault();
-  fetch(`http://54.81.110.184:3001/createuser`, {
+  fetch(`http://localhost:3001/createuser`, {
     method: 'POST',
-    mode: "no-cors",
+    mode: "same-origin",
     headers: {
       'Content-Type': 'application/json'
     },
