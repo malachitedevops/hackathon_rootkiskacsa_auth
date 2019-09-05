@@ -1,0 +1,4 @@
+CI
+.env
+node_modules
+README.md
