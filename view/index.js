@@ -8,11 +8,11 @@ button.addEventListener('click', (event) => {
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({
-      creatorname: document.querySelectorAll("input")[0].value,
-      creatorpass: document.querySelectorAll("input")[1].value,
-      newusername: document.querySelectorAll("input")[2].value,
-      newuserpass: document.querySelectorAll("input")[3].value,
-    }),
+    body: {
+      "creatorname": document.querySelectorAll("input")[0].value,
+      "creatorpass": document.querySelectorAll("input")[1].value,
+      "newusername": document.querySelectorAll("input")[2].value,
+      "newuserpass": document.querySelectorAll("input")[3].value,
+    },
   })
 })
