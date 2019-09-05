@@ -5,7 +5,7 @@ button.addEventListener('click', (event) => {
   event.preventDefault();
   fetch(`http://localhost:3001/createuser`, {
     method: 'POST',
-    mode: "same-origin",
+    mode: "no-cors",
     headers: {
       'Content-Type': 'application/json'
     },
