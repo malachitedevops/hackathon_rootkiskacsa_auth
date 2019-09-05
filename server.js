@@ -3,20 +3,16 @@
 const express = require('express');
 const app = express();
 const PORT = 3001;
+const mysql = require('mysql');
+const sha512 = require('js-sha512');
+const cors = require('cors');
 
 app.use(express.static('view'));
 app.use(express.json());
 
-app.use(function(req, res, next) {
-	res.header("Access-Control-Allow-Origin", "*"); 
-	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-	next();
-  });
+app.use(cors())
 
 require('dotenv').config();
-const mysql = require('mysql');
-const sha512 = require('js-sha512');
-const cors = require('cors');
 
 const conn = mysql.createConnection({
 	host: process.env.DB_HOST,
