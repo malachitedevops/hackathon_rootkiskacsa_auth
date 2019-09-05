@@ -1,0 +1,21 @@
+pipeline {
+	
+	environment {
+		registry = "samuzad/ersteUserCreator"
+		registryCredential = 'samudocker'
+		dockerImage = ''
+	}
+	
+	agent any
+
+	stages {
+	
+		stage ('Checkout SCM') {
+			when {
+				branch 'master'
+			}
+			steps {
+				checkout scm
+			}
+		}
+}
