@@ -3,7 +3,7 @@
 const button = document.querySelector("button");
 button.addEventListener('click', (event) => {
   event.preventDefault();
-  fetch("http://54.81.110.184:3001/createuser", {
+  fetch("http://3.87.38.201:3000/createuser", {
     method: 'POST',
     mode: "same-origin",
     headers: {
